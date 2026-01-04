@@ -4,21 +4,96 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="UHf9J0e6pNpJdPscfydtRIAVPtuNCEyx3XQ0_YvxpHA" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayurikh Events | Premier Event Staffing in UAE</title>
+    <title>Event Staffing UAE | Professional Event Staff | Zayurikh Events</title>
+    <meta name="description" content="Zayurikh Events provides premier event staffing solutions across UAE. Professional staff for corporate events, weddings, hospitality, and promotional staffing in Dubai, Abu Dhabi, Sharjah.">
+    <meta name="keywords" content="event staffing UAE, event staff Abu Dhabi, corporate event staffing Dubai, wedding staff UAE, promotional staff, hospitality staff, event management staffing">
+    <meta name="author" content="Zayurikh Events">
+    <link rel="canonical" href="https://zayurikhevents.com/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Event Staffing UAE | Zayurikh Events">
+    <meta property="og:description" content="Professional event staffing solutions across the United Arab Emirates.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://zayurikhevents.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Zayurikh Events">
+    
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Zayurikh Events",
+        "description": "Professional event staffing services in UAE",
+        "url": "https://zayurikhevents.com/",
+        "telephone": "+971-502059843",
+        "email": "contact@zayurikhevents.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sultan Bin Mohammed Al, 75 Qubaisu St",
+            "addressLocality": "Mohamed Bin Zayed City",
+            "addressRegion": "Abu Dhabi",
+            "postalCode": "20614",
+            "addressCountry": "AE"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "United Arab Emirates",
+            "containsPlace": [
+                {"@type": "City", "name": "Dubai"},
+                {"@type": "City", "name": "Abu Dhabi"},
+                {"@type": "City", "name": "Sharjah"},
+                {"@type": "City", "name": "Ajman"},
+                {"@type": "City", "name": "Ras Al Khaimah"},
+                {"@type": "City", "name": "Fujairah"},
+                {"@type": "City", "name": "Umm Al Quwain"}
+            ]
+        },
+        "serviceType": "Event Staffing",
+        "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
+    
     <style>
+        :root {
+            --primary-blue: #0c3c78;
+            --secondary-blue: #1a5ba6;
+            --accent-gold: #ffcc00;
+            --light-blue: #f5f9ff;
+            --dark-blue: #072348;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(12, 60, 120, 0.1);
+            --transition: all 0.3s ease;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-dark);
             background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         .container {
@@ -28,13 +103,47 @@
             padding: 0 15px;
         }
 
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, #0c3c78 0%, #1a5ba6 100%);
-            color: white;
-            padding: 20px 0;
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
             position: relative;
-            overflow: hidden;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--accent-gold);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .header-content {
@@ -47,345 +156,642 @@
         .logo {
             font-family: 'Montserrat', sans-serif;
             font-size: 28px;
-            font-weight: 700;
+            font-weight: 800;
             display: flex;
             align-items: center;
+            color: var(--white);
+            text-decoration: none;
         }
 
         .logo i {
             margin-right: 10px;
-            color: #ffcc00;
+            color: var(--accent-gold);
+            font-size: 32px;
         }
 
-        .tagline {
-            font-size: 16px;
+        .logo-tagline {
+            font-size: 14px;
             font-weight: 300;
             opacity: 0.9;
-            margin-top: 5px;
+            margin-top: 3px;
+            display: block;
         }
 
         .contact-info-header {
-            text-align: right;
+            display: flex;
+            gap: 20px;
+            align-items: center;
         }
 
         .contact-info-header a {
-            color: white;
+            color: var(--white);
             text-decoration: none;
-            display: block;
-            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             font-size: 15px;
+            transition: var(--transition);
         }
 
         .contact-info-header a:hover {
-            color: #ffcc00;
+            color: var(--accent-gold);
+            transform: translateY(-2px);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(12, 60, 120, 0.85), rgba(12, 60, 120, 0.9)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+            background: linear-gradient(rgba(12, 60, 120, 0.9), rgba(12, 60, 120, 0.95)), 
+                        url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
-            color: white;
-            padding: 100px 0;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 180px 0 100px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, var(--white));
         }
 
         .hero h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 48px;
+            font-size: 52px;
             margin-bottom: 20px;
-            font-weight: 700;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+
+        .hero h1 span {
+            color: var(--accent-gold);
         }
 
         .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            font-size: 22px;
+            max-width: 800px;
+            margin: 0 auto 40px;
             opacity: 0.95;
+            font-weight: 300;
         }
 
-        .cta-button {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: #0c3c78;
-            padding: 15px 35px;
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 40px;
             border-radius: 50px;
             font-weight: 600;
             font-size: 18px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid #ffcc00;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
         }
 
-        .cta-button:hover {
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+        }
+
+        .btn-primary:hover {
             background-color: transparent;
-            color: #ffcc00;
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
         }
 
         /* Services Section */
         .services {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
-            color: #0c3c78;
-            margin-bottom: 15px;
-        }
-
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
+            padding: 100px 0;
+            background-color: var(--white);
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
+            margin-top: 30px;
         }
 
         .service-card {
-            background-color: #f5f9ff;
-            border-radius: 10px;
-            padding: 30px;
+            background: var(--white);
+            border-radius: 15px;
+            padding: 40px 30px;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid #0c3c78;
+            transition: var(--transition);
+            border: 1px solid #eaeaea;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
+            z-index: 2;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(12, 60, 120, 0.1);
+            transform: translateY(-15px);
+            box-shadow: var(--shadow);
         }
 
         .service-icon {
-            font-size: 40px;
-            color: #0c3c78;
-            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 32px;
+            color: var(--primary-blue);
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: scale(1.1);
         }
 
         .service-card h3 {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 15px;
-            color: #0c3c78;
+            color: var(--primary-blue);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        /* Statistics Section */
+        .statistics {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 30px 20px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .stat-text {
+            font-size: 18px;
+            opacity: 0.9;
         }
 
         /* Contact Section */
         .contact {
-            padding: 80px 0;
-            background-color: #f5f9ff;
+            padding: 100px 0;
+            background-color: var(--light-blue);
         }
 
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
+            margin-top: 30px;
         }
 
         .contact-info {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            background: var(--white);
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
         }
 
         .contact-info h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            color: #0c3c78;
+            font-size: 32px;
+            color: var(--primary-blue);
             margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gold);
         }
 
         .contact-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--light-blue);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            background: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
 
         .contact-icon {
-            background-color: #eef5ff;
             width: 50px;
             height: 50px;
+            background: var(--primary-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
-            color: #0c3c78;
+            margin-right: 20px;
+            color: var(--white);
             font-size: 20px;
+            flex-shrink: 0;
         }
 
         .contact-details h4 {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 5px;
-            color: #0c3c78;
+            color: var(--primary-blue);
         }
 
-        .contact-details a {
-            color: #333;
+        .contact-details a, .contact-details p {
+            color: var(--text-dark);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: var(--transition);
         }
 
         .contact-details a:hover {
-            color: #0c3c78;
+            color: var(--primary-blue);
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-list li {
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 17px;
+        }
+
+        .benefits-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
 
         /* Unique Anchor Section */
         .unique-anchor {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
             text-align: center;
-            padding: 60px 0;
-            background-color: #0c3c78;
-            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .unique-anchor:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path d="M0,0V100H1000V0C1000,0 500,50 0,0Z" fill="%23ffcc00" opacity="0.1"/></svg>');
+            background-size: cover;
+        }
+
+        .unique-anchor .container {
+            position: relative;
+            z-index: 1;
         }
 
         .unique-anchor h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 32px;
+            font-size: 42px;
             margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .unique-anchor h2 span {
+            color: var(--accent-gold);
         }
 
         .unique-anchor p {
+            font-size: 20px;
             max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 18px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
         }
 
         .anchor-link {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: #0c3c78;
-            padding: 15px 40px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 18px 50px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 22px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid #ffcc00;
+            transition: var(--transition);
             text-transform: uppercase;
             letter-spacing: 1px;
+            border: 3px solid var(--accent-gold);
         }
 
         .anchor-link:hover {
-            background-color: transparent;
-            color: #ffcc00;
+            background: transparent;
+            color: var(--accent-gold);
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 204, 0, 0.3);
+        }
+
+        .anchor-note {
+            margin-top: 30px;
+            font-size: 16px;
+            opacity: 0.8;
+            font-style: italic;
         }
 
         /* Footer */
         footer {
-            background-color: #072348;
-            color: white;
-            padding: 40px 0 20px;
-            text-align: center;
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 70px 0 20px;
         }
 
         .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: var(--accent-gold);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-gold);
         }
 
         .footer-logo {
             font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 28px;
+            font-weight: 800;
             margin-bottom: 15px;
-            color: #ffcc00;
+            color: var(--accent-gold);
+        }
+
+        .footer-column p {
+            opacity: 0.8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        .quick-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            margin-bottom: 12px;
+        }
+
+        .quick-links a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quick-links a:hover {
+            opacity: 1;
+            color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        .footer-contact {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .footer-contact i {
+            color: var(--accent-gold);
+            margin-top: 5px;
         }
 
         .copyright {
-            padding-top: 20px;
+            text-align: center;
+            padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
-        /* Responsive Styles */
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+            transition: var(--transition);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .whatsapp-float a:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
         @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-            
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
+            .hero h1 { font-size: 42px; }
+            .hero p { font-size: 20px; }
+            .section-title h2 { font-size: 32px; }
+            .contact-container { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .contact-info-header {
-                text-align: center;
-                margin-top: 15px;
-            }
-            
-            .hero {
-                padding: 70px 0;
-            }
-            
-            .hero h1 {
-                font-size: 32px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            .section-title h2 {
-                font-size: 30px;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 30px;
-            }
+            header { padding: 12px 0; }
+            .header-content { flex-direction: column; gap: 15px; }
+            .contact-info-header { flex-direction: column; gap: 10px; text-align: center; }
+            .hero { padding: 160px 0 80px; }
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; }
+            .unique-anchor h2 { font-size: 32px; }
+            .anchor-link { font-size: 18px; padding: 15px 35px; }
+            .stat-number { font-size: 36px; }
         }
 
         @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-            
-            .cta-button, .anchor-link {
-                padding: 12px 25px;
-                font-size: 16px;
-            }
-            
-            .service-card, .contact-info {
-                padding: 25px;
-            }
+            .hero h1 { font-size: 30px; }
+            .service-card { padding: 30px 20px; }
+            .contact-info { padding: 30px 20px; }
+            .unique-anchor h2 { font-size: 28px; }
+            .whatsapp-float { bottom: 20px; right: 20px; }
+            .whatsapp-float a { width: 50px; height: 50px; font-size: 26px; }
         }
     </style>
 </head>
 <body>
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/971502059843" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-section">
-                    <div class="logo">
-                        <i class="fas fa-users"></i> Zayurikh Events
+                <a href="https://zayurikhevents.com/" class="logo">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        Zayurikh Events
+                        <span class="logo-tagline">Event Staffing UAE</span>
                     </div>
-                    <div class="tagline">Premier Event Staffing Solutions in UAE</div>
-                </div>
+                </a>
                 <div class="contact-info-header">
                     <a href="mailto:contact@zayurikhevents.com">
-                        <i class="fas fa-envelope"></i> contact@zayurikhevents.com
+                        <i class="fas fa-envelope"></i>
+                        contact@zayurikhevents.com
                     </a>
                     <a href="tel:+971502059843">
-                        <i class="fas fa-phone"></i> +971-502059843
+                        <i class="fas fa-phone"></i>
+                        +971-502059843
                     </a>
                 </div>
             </div>
@@ -395,9 +801,16 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Professional Event Staffing in UAE</h1>
-            <p>We provide highly trained, professional staff for all types of events across the United Arab Emirates. From corporate conferences to luxury weddings, our team ensures your event's success.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <h1>Professional <span>Event Staffing UAE</span> Solutions</h1>
+            <p>We provide highly trained, professional staff for all types of events across the United Arab Emirates. From corporate conferences in Dubai to luxury weddings in Abu Dhabi, our team ensures your event's success with exceptional service.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Book Staff Now
+                </a>
+                <a href="tel:+971502059843" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
         </div>
     </section>
 
@@ -405,8 +818,8 @@
     <section class="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Staffing Services</h2>
-                <p>We offer a comprehensive range of event staffing solutions tailored to meet your specific requirements.</p>
+                <h2>Our Event Staffing Services</h2>
+                <p>Comprehensive staffing solutions tailored for every event type across the UAE</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -414,28 +827,52 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Corporate Events</h3>
-                    <p>Professional staff for conferences, product launches, exhibitions, and corporate gatherings.</p>
+                    <p>Professional staff for conferences, product launches, exhibitions, and corporate gatherings in Dubai, Abu Dhabi, and across UAE.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-glass-cheers"></i>
                     </div>
                     <h3>Hospitality Staff</h3>
-                    <p>Waitstaff, bartenders, hosts, and hospitality professionals for hotels and venues.</p>
+                    <p>Skilled waitstaff, bartenders, hosts, and hospitality professionals for hotels, venues, and restaurants throughout the Emirates.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-ring"></i>
                     </div>
                     <h3>Weddings & Celebrations</h3>
-                    <p>Elegant and discreet staff for weddings, private parties, and special celebrations.</p>
+                    <p>Elegant, discreet, and professional staff for weddings, private parties, and special celebrations across the UAE.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-concierge-bell"></i>
                     </div>
                     <h3>Promotional Staff</h3>
-                    <p>Brand ambassadors, promo models, and event assistants for marketing campaigns.</p>
+                    <p>Brand ambassadors, promo models, product demonstrators, and event assistants for marketing campaigns and activations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-text">Trained Professionals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-text">Events Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-text">Emirates Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-text">Support Available</div>
                 </div>
             </div>
         </div>
@@ -445,8 +882,8 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Get in touch with us to discuss your event staffing needs in the UAE.</p>
+                <h2>Contact Us for Event Staffing UAE</h2>
+                <p>Get in touch with us to discuss your event staffing needs across the United Arab Emirates</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info">
@@ -465,7 +902,7 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Phone</h4>
+                            <h4>Phone & WhatsApp</h4>
                             <a href="tel:+971502059843">+971-502059843</a>
                         </div>
                     </div>
@@ -474,7 +911,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Address</h4>
+                            <h4>Office Address</h4>
                             <p>Sultan Bin Mohammed Al ,75 Qubaisu St,<br>
                             MOHAMED BIN ZAYED CITY,<br>
                             Abudhabi 20614 MAZYAD OFFICE 2</p>
@@ -482,24 +919,14 @@
                     </div>
                 </div>
                 <div class="contact-info">
-                    <h3>Why Choose Us</h3>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-check" style="color: #0c3c78; position: absolute; left: 0;"></i>
-                            <strong>Vetted Professionals:</strong> All our staff undergo rigorous screening and training.
-                        </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-check" style="color: #0c3c78; position: absolute; left: 0;"></i>
-                            <strong>Flexible Solutions:</strong> We tailor our services to match your specific event requirements.
-                        </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-check" style="color: #0c3c78; position: absolute; left: 0;"></i>
-                            <strong>UAE-Wide Coverage:</strong> We provide staffing solutions across all Emirates.
-                        </li>
-                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                            <i class="fas fa-check" style="color: #0c3c78; position: absolute; left: 0;"></i>
-                            <strong>24/7 Support:</strong> Our team is available around the clock to assist you.
-                        </li>
+                    <h3>Why Choose Our Event Staffing UAE Services</h3>
+                    <ul class="benefits-list">
+                        <li><strong>Vetted Professionals:</strong> All staff undergo rigorous screening, training, and background checks</li>
+                        <li><strong>UAE-Wide Coverage:</strong> We provide staffing solutions across all 7 Emirates</li>
+                        <li><strong>Multilingual Staff:</strong> Professionals fluent in Arabic, English, and multiple languages</li>
+                        <li><strong>Flexible Solutions:</strong> Custom staffing plans tailored to your specific event requirements</li>
+                        <li><strong>24/7 Support:</strong> Round-the-clock assistance for all your event staffing needs</li>
+                        <li><strong>Industry Experience:</strong> Years of expertise in UAE event management and staffing</li>
                     </ul>
                 </div>
             </div>
@@ -509,10 +936,12 @@
     <!-- Unique Anchor Section -->
     <section class="unique-anchor">
         <div class="container">
-            <h2>Looking for Event Staffing in UAE?</h2>
-            <p>You've found the perfect partner for all your event staffing needs in the United Arab Emirates. With our extensive network of trained professionals and years of experience, we guarantee exceptional service for your next event.</p>
-            <a href="https://zayurikhevents.com/" class="anchor-link">Event Staffing UAE</a>
-            <p style="margin-top: 20px; font-size: 16px; opacity: 0.9;">Click the link above to visit our main website</p>
+            <h2>Looking for <span>Event Staffing UAE</span> Services?</h2>
+            <p>You've found the premier partner for all your event staffing needs across the United Arab Emirates. With our extensive network of trained professionals and years of experience in the UAE market, we guarantee exceptional service for your next event in Dubai, Abu Dhabi, Sharjah, or any other Emirates.</p>
+            <a href="https://zayurikhevents.com/" class="anchor-link">
+                <i class="fas fa-external-link-alt"></i> Event Staffing UAE
+            </a>
+            <p class="anchor-note">Click above to visit our main website for comprehensive event staffing solutions</p>
         </div>
     </section>
 
@@ -520,23 +949,55 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div style="flex: 1; min-width: 300px;">
+                <div class="footer-column">
                     <div class="footer-logo">Zayurikh Events</div>
-                    <p>Professional event staffing solutions across the United Arab Emirates.</p>
+                    <p>Premier event staffing solutions provider across the United Arab Emirates. Professional, reliable, and experienced staff for all types of events.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h3 style="margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Quick Links</h3>
-                    <p><a href="#contact" style="color: #ffcc00; text-decoration: none;">Contact Us</a></p>
-                    <p><a href="https://zayurikhevents.com/" style="color: #ffcc00; text-decoration: none;">Main Website</a></p>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="https://zayurikhevents.com/"><i class="fas fa-chevron-right"></i> Main Website</a></li>
+                    </ul>
                 </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h3 style="margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Contact Info</h3>
-                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> contact@zayurikhevents.com</p>
-                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +971-502059843</p>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:contact@zayurikhevents.com">contact@zayurikhevents.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+971502059843">+971-502059843</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Office:</strong><br>
+                                Sultan Bin Mohammed Al ,75 Qubaisu St,<br>
+                                MOHAMED BIN ZAYED CITY,<br>
+                                Abudhabi 20614
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2023 Zayurikh Events. All rights reserved. | Premier Event Staffing in UAE
+                &copy; 2023 Zayurikh Events. All rights reserved. | Premier Event Staffing UAE Services
             </div>
         </div>
     </footer>
@@ -559,13 +1020,13 @@
                 }
             });
         });
-        
-        // Add a simple animation to service cards on scroll
+
+        // Animate elements on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if(entry.isIntersecting) {
@@ -574,16 +1035,8 @@
                 }
             });
         }, observerOptions);
-        
-        // Apply animation to service cards
+
+        // Apply animations to service cards
         document.querySelectorAll('.service-card').forEach(card => {
             card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(card);
-        });
-    </script>
-</body>
-
-</html>
-
+            card
